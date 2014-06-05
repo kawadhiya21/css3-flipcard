@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flipcard</title>
+	<style type="text/css">
+	.scene3D {
+	    display: block;
+	    float: left;
+	    margin: 10px;
+	    /*border-radius*/
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	}
+	.scene3D:hover .flip {
+	    /*transform*/
+	    -webkit-transform: rotateX(180deg);
+	    -moz-transform: rotateX(180deg);
+	    -ms-transform: rotateX(180deg);
+	    -o-transform: rotateX(180deg);
+	    transform: rotateX(180deg);
+	}
+	.flip {
+	    width: 100px;
+	    height: 100px;
+	    /*border-radius*/
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	    /*box-shadow*/
+	    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	    -moz-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	    /*transform*/
+	    -webkit-transform: rotateX(0deg);
+	    -moz-transform: rotateX(0deg);
+	    -ms-transform: rotateX(0deg);
+	    -o-transform: rotateX(0deg);
+	    transform: rotateX(0deg);
+	    /*transition*/
+	    -webkit-transition: all 1s ease;
+	    -moz-transition: all 1s ease;
+	    -o-transition: all 1s ease;
+	    transition: all 1s ease;
+	    /*transform-style*/
+	    -webkit-transform-style: preserve-3d;
+	    -moz-transform-style: preserve-3d;
+	    -ms-transform-style: preserve-3d;
+	    -o-transform-style: preserve-3d;
+	    transform-style: preserve-3d;
+	}
+
+	img {
+	    height: 100px;
+	    width: 100px;
+	    /*border-radius*/
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	}
+	
+	.flip div {
+	    position: absolute;
+	    width: 100px;
+	    height: 100px;
+	    /*border-radius*/
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	    /*backface-visibility*/
+	    -webkit-backface-visibility: hidden;
+	    -moz-backface-visibility: hidden;
+	    -ms-backface-visibility: hidden;
+	    -o-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	}
+	.flip div:first-child {
+	    /*border-radius*/
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	    background: #333;
+	    /*transform*/
+	    -webkit-transform: rotateX(180deg);
+	    -moz-transform: rotateX(180deg);
+	    -ms-transform: rotateX(180deg);
+	    -o-transform: rotateX(180deg);
+	    transform: rotateX(180deg);
+	}
+	.flip div:first-child p {
+	    color: #FFF;
+	    text-shadow: 0 0 1px .111;
+	    padding-top: 50px;
+	    text-align: center;
+	}
+	
+	</style>
+</head>
+<body>
+
+
+	<div class="scene3D">
+		<div class="flip">
+			<div>
+				<p>
+					The Blog Bowl
+				</p>
+			</div>
+			<div>
+				<img src="https://s3.amazonaws.com/photos.angel.co/startups/i/307822-fc18fa088777d8dad0f34b7aa0cee49a-thumb_jpg.jpg?buster=1386746434"/>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
